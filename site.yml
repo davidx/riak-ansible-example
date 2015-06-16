@@ -1,0 +1,7 @@
+---
+- hosts: all
+  remote_user: ec2-user
+  sudo: yes
+  vars: 
+    riak_version: 2.1.1-1
+  roles: ['davidx.riak-simple']
